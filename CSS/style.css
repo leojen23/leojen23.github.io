@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'existencelight';
+    src: url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.eot');
+    src: url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.woff2') format('woff2'),
+         url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.woff') format('woff'),
+         url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.ttf') format('truetype'),
+         url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.svg#existencelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'existenceunicase_light';
+    src: url('/CSS/fonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.eot');
+    src: url('/CSS/fonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/CSS/fonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.woff2') format('woff2'),
+         url('/CSS/fonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.woff') format('woff'),
+         url('/CSS/fonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.ttf') format('truetype'),
+         url('/CSS/fonts/existence_unicaselight_macroman/Existence-UnicaseLight-webfont.svg#existenceunicase_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+:root {
+    --color-primary: #2d302f;
+    --color-secondary:#89a6b1;
+    --color-tertiary:#2d5260;
+    --hover-color:#89a6b1;
+  }
+*,
+*::after,
+ *::before {
+ margin: 0;
+ padding: 0;
+ font-family: 'existencelight';
+ box-sizing: inherit;
+ text-decoration: none;
+ list-style: none;
+ font-size: 1rem;
+ }
+
+ h1{
+    color: var(--color-secondary);
+    font-size: 1.7rem;
+    
+}
+h2{
+    color: var(--color-secondary);
+    font-size: 1rem; 
+    
+}
+a,address{
+    color: white;
+}
+a:hover{
+    color: var(--hover-color);
+}
+
+body{
+    width: 100vw;
+    color: var(--color-primary);
+    background-image: url("../IMG/bg_header_dk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+
+/* HEADER START */
+   header{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        width: 100%;
+        height: 100%;
+    }
+    /*HEADER MAIN SECTION START */
+        .hd_main{
+            display: grid;
+            grid-template-rows: 15% 85%;
+        }
+            nav{
+                width: 100%;
+            }
+                .hd_navbar{
+                    display: grid;
+                    grid-auto-flow: column;
+                    justify-content: center;
+                    background-color:var(--color-primary);
+                    opacity: 0.8;
+                }
+                    .hdnav_item{
+                        text-align: center;
+                        padding:1rem 0 1rem 1rem
+                    }
+                        .hdnav_link{
+                            border-right:1px solid white;
+                            padding: 0 1rem 0 0;
+                            font-size: 0.9rem;
+                        }
+                            .hdnav_link:active{
+                                text-transform: uppercase;
+                                color: white;
+                            }
+            .intro_container{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 2rem;
+            }
+                .intro_container p{
+                    font-size:1.6em;
+                    color: var(--color-primary);
+            }
+                .intro_heading{
+                    color: var(--color-primary);
+                    font-size: 5.5rem;
+                }
+    /* HEADER MAIN SECTION END */
+        
+    /* HEADER SIDE SECTION START*/
+        .hd_side {
+            text-align: center;
+            display: grid;
+            grid-auto-rows: auto;
+            grid-row-gap: 1rem;;
+            background-color: rgba(45, 48, 47,0.9);
+            color: white;   
+        }
+            .profile_pic{
+                max-width: 100%;
+                border: 1px solid white;
+                margin: 3rem;
+            }
+                figcaption{
+                    font-size: 2rem;
+                }
+                .contact a{
+                    font-size: 0.9rem;
+                }
+                    .contact a:active{
+                        text-decoration: underline;
+                }
+                .cv_btn{
+                    display: block;
+                    padding: 1rem;
+                    margin: 3rem;
+                    background-color: var(--color-tertiary);
+                }
+                    .cv_btn:hover{
+                        color: white;
+                        border: 1px solid white;
+                    }
+                    .cv_btn:active{
+                        background-color:white;
+                        color: var(--color-tertiary);
+                    }
+/* HEADER SIDE SECTION END*/
+/* HEADER END */
+
+/* MAIN SECTION START */
+
+main{
+   width: 100%;
+   background-color: white;
+}
+
+/* MAIN SECTION FORMATING START*/
+.info_heading_dark{
+    color: var(--color-tertiary);
+}
+.info_container{ 
+    padding:5rem 15rem;
+    word-wrap: break-word;
+}
+    .headings_container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+        .info_heading{
+            margin-bottom: 0.5rem;
+        }
+        .info_subheading{
+            text-transform: uppercase;
+        }
+    .content_container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top:2.5rem
+    }
+            .info_content_item, .info_content_link, .info_content_item p{
+            font-size: 0.9rem;
+            margin-bottom :0.1rem;
+        }
+            .info_content_link:hover{
+                color: var(--color-tertiary);
+            }
+
+/* MAIN SECTION FORMATING END*/
+
+
+
+/* BIOGRAPHIE SECTION START */
+    .content_container_bio_section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .content_container_bio_section p{
+        color: var(--color-primary);
+        padding-bottom: 1rem;
+    }
+    
+/* BIOGRAPHIE SECTION END */
+
+
+
+
+/* COMPETENCES & DIPLOMES SECTION START */
+
+#competences_section{
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+/* COMPETENCES & DIPLOMES SECTION END*/
+
+
+
+/* EXPERIENCES SECTION START */
+#experiences_section{
+    width: 100%;
+}
+    .content_container_experiences_section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+        .experiences_section_container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2.5rem;
+        }
+            .experiences_section_item{
+                border-bottom: 1px solid var(--color-secondary);
+                border-right: 1px solid var(--color-secondary);
+                padding: 1rem ;
+                box-shadow:5px 5px 8px var(--color-secondary)
+            }
+                .experiences_job{
+                    color:var(--color-primary);
+                    text-transform: uppercase; 
+                    font-size: 1.1rem; 
+            }
+                .experiences_section_item div{ 
+                    display: flex;
+                    justify-content: space-between;
+                    color: var(--color-primary);
+                    }
+                    .experiences_date{
+                        font-size:0.8rem;
+                        display: inline;
+
+                    }
+                    .experiences_place{
+                        font-size:0.8rem;
+                        display: inline;
+                    }
+                .job_mission_container{
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                }
+                    .job_mission_item{
+                        font-size:0.9rem;
+                        margin-bottom: 0.3rem;
+                    }
+                    .job_mission_item::before {content: "~"; color: var(--color-primary)}
+                          
+/* EXPERIENCES SECTION END */
+
+
+
+
+/* LANGAGES ET DIPLOMEs SECTION START */
+   #langages_diplomes_section{
+    background-color: var(--color-secondary);
+}
+    .headings_container_langages_section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:2.5rem;
+    }
+    .content_container_langages{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2.5rem;
+        color: white;
+    }
+        .info_content_diplome_item{
+            margin-bottom:1rem;
+        }
+/* LANGAGES ET DIPLOMES SECTION END */
+
+
+
+/* FOOTER START */
+footer{
+    width: 100%;
+}  
+    .footer_bg_opacity{
+        width: 100%;
+        background-color: var(--color-primary);
+        opacity: 0.9;;
+    }
+    .footer_info_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        padding: 5rem;
+        align-items: center;
+    }
+        .footer_contact_section{
+            display: flex;
+            flex-direction: column;  
+        }
+            .contact_name{
+                font-size: 1.7rem;
+                padding-bottom: 1rem;
+                color: white;
+            }
+        .footer_form_section{
+            display: grid;
+            grid-auto-flow: row;
+            justify-content: center; 
+           
+        }
+            .form_item{    
+                display: flex;
+                padding: 0.8em;
+                color: white;
+            }
+                label{
+                    width:150px
+                }
+        .footer_uparrow{
+            width: 100%;
+        } 
+        .footer_uparrow a{  
+            color: white;
+        }
+        .footer_uparrow a:hover{
+            padding: 1rem;
+            color: var(--color-secondary);
+        }
+            .uparrow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            border-radius: 50%;
+            }
+                
+/* FOOTER END*/
+
+/* END OF CODE */
+
+
+    
+        
+
+   
+        
