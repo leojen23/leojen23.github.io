@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'existencelight';
-    src: url('./CSS/fonts/Existence_light_macroman/Existence-Light-webfont.eot');
-    src: url('./CSS/fonts/Existence_light_macroman/Existence-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./CSS/fonts/Existence_light_macroman/Existence-Light-webfont.woff2') format('woff2'),
-         url('./CSS/fonts/Existence_light_macroman/Existence-Light-webfont.woff') format('woff'),
-         url('./CSS/fonts/Existence_light_macroman/Existence-Light-webfont.ttf') format('truetype'),
-         url('./CSS/fonts/Existence_light_macroman/Existence-Light-webfont.svg#existencelight') format('svg');
+    src: url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.eot');
+    src: url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.woff2') format('woff2'),
+         url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.woff') format('woff'),
+         url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.ttf') format('truetype'),
+         url('../CSS/fonts/Existence_light_macroman/Existence-Light-webfont.svg#existencelight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -140,7 +140,7 @@ body{
                 }
                     .cv_btn:hover{
                         color: white;
-                        border: 1px solid transparent;
+                        border: 1px solid white;
                     }
                     .cv_btn:active{
                         background-color:white;
